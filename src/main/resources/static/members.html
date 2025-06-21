@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group Members</title>
+    <link rel="stylesheet" href="members.css">
+</head>
+<body>
+
+<h1 id="groupTitle">Group: <span id="groupNameDisplay"></span></h1>
+
+<!-- Members Table -->
+<table id="membersTable">
+    <thead>
+    <tr>
+        <th>Phone</th>
+        <th>Name</th>
+        <th>Net Amount</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Filled dynamically by JS -->
+    </tbody>
+</table>
+
+<!-- Add Member Form -->
+<h3>Add Member</h3>
+<form autocomplete="off">
+    <input type="text" id="addName" placeholder="Name">
+    <input type="number" id="addPhone" placeholder="Phone">
+    <input type="number" id="addAmount" placeholder="Initial Amount (optional)" value="0" autocomplete="off">
+
+    <button type="button" onclick="addMember()">Add Member</button>
+</form>
+<!-- Summary -->
+<div id="summary">
+    <p id="totalDisplay">Total: ₹0</p>
+    <p id="averageDisplay">Average: ₹0</p>
+</div>
+<button id="deleteGroupBtn">Delete Group</button>
+<!-- Go Back -->
+<br>
+<button onclick="window.location.href='group.html'">Back to Groups</button>
+
+<script src="members.js"></script>
+<script>
+    // Show group name from localStorage
+    const currentGroup = localStorage.getItem("currentGroup");
+    document.getElementById("groupNameDisplay").textContent = currentGroup || "Unknown";
+</script>
+</body>
+</html>

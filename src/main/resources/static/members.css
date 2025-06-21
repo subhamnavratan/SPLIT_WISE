@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#summary {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#deleteGroupBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#deleteGroupBtn:hover {
+    background-color: #cc0000;
+}
